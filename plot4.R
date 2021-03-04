@@ -9,7 +9,7 @@ png("plot4.png",height = 480,width = 480)
 par(mfrow=c(2,2))
 plot(datetime,household_power_consumption$Global_active_power,type="l",xlab="",ylab="Global Active Power")
 plot(datetime,household_power_consumption$Voltage,xlab="datetime",ylab="Voltage",type="l")
-
+#German names for "Thursday", "Friday","Saturday" --> "Do","Fr","Sa"
 plot(datetime,household_power_consumption$Sub_metering_1,type="l",xlab="",ylab="Energy sub metering")
 lines(datetime,household_power_consumption$Sub_metering_2,col="red")
 lines(datetime,household_power_consumption$Sub_metering_3,col="blue")
